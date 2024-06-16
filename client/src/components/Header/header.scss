@@ -1,0 +1,21 @@
+@import "../../partials/variables";
+@import "../../partials/_mixins";
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    background-color: $darkGrey;
+    position: relative;
+  
+    &-bar {
+        color: $font !important;
+
+        &:hover {
+            color: $black !important;
+        }
+    }
+}
+
+#basic-nav-dropdown {
+    color: $font;
+}

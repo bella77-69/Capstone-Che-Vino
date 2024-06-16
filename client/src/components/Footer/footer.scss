@@ -1,0 +1,145 @@
+@import "../../partials/mixins";
+@import "../../partials/variables";
+
+.footer{
+    width:100%;
+    background-color: $darkGrey;
+    color:rgb(208, 207, 207);
+
+    &-img {
+    width: 30%;
+    padding: .3125rem;
+    color: $icon;
+
+        @include tablet {
+        width: 15%;
+        }
+
+        @include desktop {
+        width: 10%;
+        }
+    }
+
+    &-header{
+    padding: 1rem;
+    font-size: .75rem;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    color: $font;
+ 
+
+        @include tablet {
+        padding: 2rem;
+        display:flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content:center;
+       
+        }
+    }
+
+    &-section{
+    display: flex;
+    justify-content: flex-start;  
+    padding: .625rem;
+    width: 100%;
+    font-size: .75rem;
+
+         @include tablet {
+        display: flex;
+        justify-content: flex-start;  
+        padding: .625rem;
+        width:50%;
+        font-size: 1rem;
+         }
+
+        @include desktop {
+        font-size: 1.125rem;
+        align-items: center;
+        width: 30%;
+         }
+        }
+
+    &-span{
+    padding:0 1rem;
+    color: $font;
+    }
+
+    &-icon {
+    padding: 0 1rem;
+    
+    }
+
+    &-border {
+    background: $divder none repeat scroll 0 0;
+    display: block;
+    height: .125rem;
+    left: 0;
+    margin: 1.25rem auto;
+    position: relative;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 11.25rem;
+
+        &:before {
+        width: 100%;
+        left:120px;
+        }
+                
+        &::after {
+        width: 100%;
+        right:120px;
+        }
+
+        @include tablet {
+        width: 31.25rem
+        }
+        }
+
+    &-bottom {
+    padding:1.5rem 2rem;
+    display:flex;
+    align-items:center;
+    justify-content:Center;
+
+        @include tablet {
+        padding:1rem;
+       
+        }
+    }
+        
+    &-social{
+    margin:0 20px;
+    transition:0.5s;
+    font-size: 1.125rem;
+    color:$font;
+
+        @include tablet {
+        padding:1rem;
+        font-size: 1.5625rem;
+        margin:0 5px;
+        }
+
+        &:hover{
+        color:$black;
+        }
+    }
+
+    &-copyright{
+    font-size: .625rem;
+    padding:0.8em 0;
+    background-color: $darkbackground;
+    text-align:center;
+    color: $font;
+
+        @include tablet {
+        font-size: .75rem;
+        }
+
+        @include desktop {
+        font-size: .875rem;
+        }
+    }
+}

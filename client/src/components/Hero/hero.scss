@@ -1,0 +1,101 @@
+@import "../../partials/mixins";
+@import '../../partials/variables';
+
+.hero {
+    margin: 0 auto;
+    width: 100%;
+    font-family: $fontfamily;
+    height: 25vh;
+    position: relative;
+    color: #fff;
+
+    &-image {
+      background: url("../../assets/images/cork3.jfif") no-repeat;
+      background-size: auto auto;
+      background-size: 100% auto;
+      width: 100%;
+      height: 39vh;
+      
+        @include tablet {
+        background-size: cover;
+        height: 66vh;
+        }
+
+        @include desktop {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+        height: 90vh;
+        }
+    }
+
+    &-overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0px;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      opacity: .9; 
+    }
+
+    &-content {
+      text-align: center;
+      position: absolute;
+
+      @include tablet {
+      margin-top: -1rem;
+      }
+    }
+
+    &-table {
+      width: 100%;
+      height: 100%;
+      display: table;
+      margin-top: 1rem;
+    }
+
+    &-cell {
+      font-family: $fontfamily;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    &-smaller {
+      overflow: hidden;
+      letter-spacing: .0625rem;
+      font-weight: 300;
+      display: inline-block;
+      animation: slideRightBottom 1.5s backwards;
+      animation-delay: 1.3s;
+      animation-direction: normal;
+      transition-timing-function: step-end;  
+      width: 57%;
+      font-size: .5rem;
+      text-align: center;
+  
+          @keyframes slideRightBottom {
+          from {
+          opacity: 0;
+          transform: translateX(200px);
+          } 
+          to {
+          opacity: 1;
+          transform: translateX(0%);
+          }
+          }
+  
+          @include tablet {
+          font-size: .75rem;
+          padding: .1875rem; 
+          }
+  
+          @include desktop {
+          font-size: 1.312rem;
+          padding: 1.25rem;
+          width: 50%;
+          }
+      }
+}
