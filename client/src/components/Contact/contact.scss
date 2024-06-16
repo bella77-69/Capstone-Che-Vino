@@ -1,0 +1,45 @@
+@import "../../partials/variables";
+@import "../../partials/_mixins";
+
+.contact {
+    margin: 0, auto;
+    background-color: #1a202c;
+    color: #ffffff;
+  
+
+    &-name {
+    margin: 0;
+    @include Copy;
+    color: $font;
+    font-weight: 400;
+
+        @include tablet {
+        @include deskCopy;
+        }
+
+        @include desktop {
+        @include deskHeader;
+        }
+    }
+
+    &-review {
+    @include bodyCopy;
+    color: $font;
+    font-weight: 300;
+ 
+
+        @include tablet {
+        @include deskCopy;
+        }
+
+        @include desktop {
+        @include deskHeader;
+        }
+    }
+
+    &-input {
+    border-bottom: 1px solid $black;
+    padding-bottom: 1.3125rem;
+    }
+
+}

@@ -1,6 +1,8 @@
 const dbConn = require('../config/db.config');
 
 const AllComments = function (comment) {
+    // this.id = comment.id;
+   
     this.name = comment.name
     this.email = comment.email;
     this.comment = comment.comment;
@@ -13,6 +15,7 @@ AllComments.getAllComments = (result) => {
       console.log("Error while fetching All Comments", err);
       result(null, err);
     } else {
+    //  console.log("Admin fetched successfully");
       result(null, res);
     }
   });

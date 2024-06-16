@@ -10,6 +10,7 @@ import SparklingWinePage from "./pages/Wine/SparklingWinePage";
 import PortWinePage from "./pages/Wine/PortWinePage";
 import RoseWinePage from "./pages/Wine/RoseWinePage";
 import DessertWinePage from "./pages/Wine/DessertWinePage";
+import ContactPage from "./pages/Contact";
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
       <Route path='/wines/port' element={<PortWinePage />} />
       <Route path='/wines/rose' element={<RoseWinePage />} />
       <Route path='/wines/dessert' element={<DessertWinePage />} />
+      <Route path='/contact' element={<ContactPage />} />
       </Routes>
     <Footer />
     </BrowserRouter>
