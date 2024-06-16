@@ -4,6 +4,12 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
+import RedWinePage from "./pages/Wine/RedWinePage";
+import WhiteWinePage from "./pages/Wine/WhiteWinePage";
+import SparklingWinePage from "./pages/Wine/SparklingWinePage";
+import PortWinePage from "./pages/Wine/PortWinePage";
+import RoseWinePage from "./pages/Wine/RoseWinePage";
+import DessertWinePage from "./pages/Wine/DessertWinePage";
 
 function App() {
 
@@ -15,6 +21,12 @@ function App() {
       <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/search' element={<Search />} />
+      <Route path='/wines/reds' element={<RedWinePage />} />
+      <Route path='/wines/whites' element={<WhiteWinePage />} />
+      <Route path='/wines/sparkling' element={<SparklingWinePage />} />
+      <Route path='/wines/port' element={<PortWinePage />} />
+      <Route path='/wines/rose' element={<RoseWinePage />} />
+      <Route path='/wines/dessert' element={<DessertWinePage />} />
       </Routes>
     <Footer />
     </BrowserRouter>

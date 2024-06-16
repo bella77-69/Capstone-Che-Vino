@@ -50,15 +50,15 @@ export default function Search() {
         <div className="row mt-5">
           {repos.map((value) => (
             <div className="col-lg-4 col-md-6 mb-4" key={value.id}>
-              <div className="card h-100">
+              <div className="card">
                 <img
                   className="card-img-top rounded product-image"
                   src={value.image}
                   alt="wine"
                 />
                 <div className="card-body">
-                  <h5 className="card-title">{value.wine}</h5>
-                  <h6 className="card-subtitle mb-2">Winery: {value.winery}</h6>
+                  <h5 className="title">{value.wine}</h5>
+                  <h6 className="subtitle mb-2">Winery: {value.winery}</h6>
                   <div className="review-stats d-flex align-items-center">
                     <svg
                       fill="currentColor"
@@ -71,11 +71,11 @@ export default function Search() {
                     >
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
                     </svg>
-                    <span className="review-text ml-2">
+                    <span className="review ml-2">
                       Reviews: {value.reviews}
                     </span>
                   </div>
-                  <p className="card-text mt-2">Average Rating: {value.average}</p>
+                  <p className="text mt-2">Average Rating: {value.average}</p>
                 </div>
               </div>
             </div>
