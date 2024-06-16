@@ -11,6 +11,9 @@ import PortWinePage from "./pages/Wine/PortWinePage";
 import RoseWinePage from "./pages/Wine/RoseWinePage";
 import DessertWinePage from "./pages/Wine/DessertWinePage";
 import ContactPage from "./pages/Contact";
+import ReviewPage from "./pages/Reviews";
+import Reviews from "./components/Reviews/Reviews";
+import LeaveReview from "./components/Reviews/LeaveReview";
 
 function App() {
 
@@ -29,6 +32,9 @@ function App() {
       <Route path='/wines/rose' element={<RoseWinePage />} />
       <Route path='/wines/dessert' element={<DessertWinePage />} />
       <Route path='/contact' element={<ContactPage />} />
+      <Route path='/reviews' element={<ReviewPage />} />
+      <Route path='/reviews/:id' element={<Reviews />} />
+      <Route path="/leave_review/:id" element={<LeaveReview />} />
       </Routes>
     <Footer />
     </BrowserRouter>

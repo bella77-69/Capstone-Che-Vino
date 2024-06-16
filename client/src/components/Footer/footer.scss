@@ -1,145 +1,86 @@
-@import "../../partials/mixins";
-@import "../../partials/variables";
+// Import Variables and Mixins
+@import '../../partials/variables';
+@import '../../partials/mixins';
 
-.footer{
-    width:100%;
-    background-color: $darkGrey;
-    color:rgb(208, 207, 207);
+// Footer Styles
+.footer {
+    background-color: $primary-color;
+  color: $font;
+  padding: $spacing-unit-double;
+  text-align: center;
 
-    &-img {
-    width: 30%;
-    padding: .3125rem;
-    color: $icon;
-
-        @include tablet {
-        width: 15%;
-        }
-
-        @include desktop {
-        width: 10%;
-        }
-    }
-
-    &-header{
-    padding: 1rem;
-    font-size: .75rem;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    color: $font;
- 
-
-        @include tablet {
-        padding: 2rem;
-        display:flex;
-        align-items:center;
-        flex-direction: column;
-        justify-content:center;
-       
-        }
-    }
-
-    &-section{
+  .footer-header {
     display: flex;
-    justify-content: flex-start;  
-    padding: .625rem;
-    width: 100%;
-    font-size: .75rem;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: $spacing-unit;
 
-         @include tablet {
-        display: flex;
-        justify-content: flex-start;  
-        padding: .625rem;
-        width:50%;
-        font-size: 1rem;
-         }
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-around;
+    }
 
-        @include desktop {
-        font-size: 1.125rem;
-        align-items: center;
-        width: 30%;
-         }
+    .footer-img {
+      width: 100px;
+      margin-bottom: $spacing-unit;
+
+      @include tablet {
+        margin-bottom: 0;
+      }
+    }
+
+    .footer-section {
+      display: flex;
+      align-items: center;
+      margin-bottom: $spacing-unit-half;
+
+      @include tablet {
+        margin-bottom: 0;
+      }
+
+      .footer-span {
+        margin-right: $spacing-unit-half;
+
+        .footer-icon {
+          color: $highlight-color;
+          font-size: 1.5rem;
         }
+      }
 
-    &-span{
-    padding:0 1rem;
-    color: $font;
+      span {
+        font-size: $font-size-base;
+      }
     }
+  }
 
-    &-icon {
-    padding: 0 1rem;
-    
-    }
-
-    &-border {
-    background: $divder none repeat scroll 0 0;
+  .footer-border {
     display: block;
-    height: .125rem;
-    left: 0;
-    margin: 1.25rem auto;
-    position: relative;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 11.25rem;
+    width: 80%;
+    height: 1px;
+    background-color: $divider;
+    margin: $spacing-unit-double auto;
+  }
 
-        &:before {
-        width: 100%;
-        left:120px;
-        }
-                
-        &::after {
-        width: 100%;
-        right:120px;
-        }
+  .footer-bottom {
+    margin-bottom: $spacing-unit;
+    display: flex;
+    justify-content: center;
+    gap: $spacing-unit;
 
-        @include tablet {
-        width: 31.25rem
-        }
-        }
+    .footer-social {
+      color: $font;
+      font-size: 2rem;
+      transition: color $transition-speed $transition-ease;
 
-    &-bottom {
-    padding:1.5rem 2rem;
-    display:flex;
-    align-items:center;
-    justify-content:Center;
-
-        @include tablet {
-        padding:1rem;
-       
-        }
+      &:hover,
+      &:focus {
+        color: $highlight-color;
+      }
     }
-        
-    &-social{
-    margin:0 20px;
-    transition:0.5s;
-    font-size: 1.125rem;
-    color:$font;
+  }
 
-        @include tablet {
-        padding:1rem;
-        font-size: 1.5625rem;
-        margin:0 5px;
-        }
-
-        &:hover{
-        color:$black;
-        }
-    }
-
-    &-copyright{
-    font-size: .625rem;
-    padding:0.8em 0;
-    background-color: $darkbackground;
-    text-align:center;
-    color: $font;
-
-        @include tablet {
-        font-size: .75rem;
-        }
-
-        @include desktop {
-        font-size: .875rem;
-        }
-    }
+  .footer-copyright {
+    font-size: $font-size-small;
+    color: lighten($font, 20%);
+  }
 }

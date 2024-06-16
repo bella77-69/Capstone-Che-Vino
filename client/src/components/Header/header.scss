@@ -4,18 +4,53 @@
 .nav {
     display: flex;
     flex-direction: column;
-    background-color: $darkGrey;
     position: relative;
-  
-    &-bar {
-        color: $font !important;
+    border-bottom: 1px solid $divider;
+}
 
-        &:hover {
-            color: $black !important;
-        }
+.nav-bar nav-link {
+    padding: 0 2rem;
+    margin: 0;
+
+    &:hover {
+        color: $highlight-color;
     }
 }
 
 #basic-nav-dropdown {
     color: $font;
+}
+
+.navbar-toggler-icon {
+    background-color: $highlight-color;
+    border-radius: 5px;
+    padding: 0.25rem;
+
+    &:hover {
+        color: $highlight-color;
+        padding: 0;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $font;
+    padding: 0 2rem;
+    margin: 0;
+}
+
+.navbar-nav .dropdown-menu {
+    margin: 1.5em;
+}
+
+.dropdown-item {
+    color: $font;
+    background-color: $background;
+    border-bottom: 1px solid $divider;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    transition: background-color $transition-speed $transition-ease;
+
+    &:hover {
+        background-color: $highlight-color;
+    }
 }

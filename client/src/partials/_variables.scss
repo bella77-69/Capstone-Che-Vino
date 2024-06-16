@@ -1,28 +1,69 @@
+// Color Variables
 $black: #060404;
 $blacker: #080609;
 $beige: #f5e3d9;
 $dark: #443c44;
-$darkBrown: #2c2423;
-$Greyish: #232c35;
-$brown: #2e0f09;
+$darkBrown: #3b2c35; 
+$greyish: #232c35;
+$brown: #463731;
 $cement: #777985;
-$mattegrey:#7c848c;
-$darkGrey: #3b3c3f;
+$mattegrey: #7c848c;
+$darkGrey: #2e2e2e;
 $blueGrey: #343444;
-$backgroun: #262423;
+$background: #262423; 
 $darkdarkgrey: #373d47;
 $color: #8c847c;
 $brownRed: #684d4d;
 $lightBeige: #fff4d7;
 $taupe: #7b6c6e;
-$brown: #463731;
-$font: #f9f9f3;
+$font: #ffffff; 
 $icon: rgb(8, 8, 8);
-$divder: #9d909b;
+$divider: #9d909b; 
 $darkbackground: rgb(37, 36, 36);
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400;1,500;1,700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@200;400;500;600;700&display=swap');
-$fontfamily: 'DM Sans', sans-serif;
-$darkBrown: #3b2c35;
-$darkGrey: #2e2e2e;
-$font: #ffffff;
 $lightCream: #f5f5dc;
+
+// Font Variables
+$font-family-base: 'DM Sans', sans-serif;
+$font-size-base: 16px;
+$font-size-large: 1.25rem; // 20px
+$font-size-small: 0.875rem; // 14px
+
+// Spacing Variables
+$spacing-unit: 1rem; // 16px
+$spacing-unit-half: 0.5rem; // 8px
+$spacing-unit-double: 2rem; // 32px
+
+// Border Variables
+$border-radius: 4px;
+$border-color: #e5e5e5;
+
+// Transition Variables
+$transition-speed: 0.3s;
+$transition-ease: ease-in-out;
+
+// Google Fonts Import
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400;1,500;1,700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@200;400;500;600;700&display=swap');
+
+$primary-color: #000000; // Dark color for text and borders
+$secondary-color: #ffffff; // White for text and background
+$highlight-color: #CD0617; // Highlight color for buttons and links
+$bg-light: #f8f9fa; // Light background color
+
+// Font Variables
+$font-family-base: 'Arial', sans-serif;
+$font-size-base: 16px;
+$font-size-large: 1.25rem;
+$font-size-small: 0.875rem;
+
+// Spacing Variables
+$spacing-unit: 1rem;
+$spacing-unit-half: 0.5rem;
+$spacing-unit-double: 2rem;
+
+// Border Variables
+$border-radius: 4px;
+$border-color: #e5e5e5;
+
+// Transition Variables
+$transition-speed: 0.3s;
+$transition-ease: ease-in-out;

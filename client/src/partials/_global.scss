@@ -1,11 +1,92 @@
-@use "./_variables.scss" as *;
-@use "./_mixins.scss" as *;
+@import './variables';
+@import './mixins';
+@import './partials';
 
-@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,300;0,400;0,600;1,100&display=swap');
+// Reset Styles
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+// Global Body Styles
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  background-color: $primary-color;
+  color: $secondary-color;
+  line-height: 1.6;
+}
 
-* {
-    box-sizing: border-box;
-    background-color: #282c34;
-    font-family: 'Glory', sans-serif;
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $spacing-unit;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: $spacing-unit;
+}
+
+// Links
+a {
+  color: $highlight-color;
+  text-decoration: none;
+  transition: color $transition-speed $transition-ease;
+
+  &:hover,
+  &:focus {
+    color: darken($highlight-color, 10%);
+    text-decoration: underline;
+  }
+}
+
+// Lists
+ul, ol {
+  padding-left: $spacing-unit-double;
+  margin-bottom: $spacing-unit;
+
+  li {
+    margin-bottom: $spacing-unit-half;
+  }
+}
+
+// Buttons
+button,
+input[type="submit"],
+input[type="button"] {
+  background-color: $highlight-color;
+  border: none;
+  border-radius: $border-radius;
+  color: $highlight-color;
+  cursor: pointer;
+  font-size: $font-size-base;
+  padding: $spacing-unit-half $spacing-unit;
+  transition: background-color $transition-speed $transition-ease;
+
+  &:hover,
+  &:focus {
+    background-color: darken($highlight-color, 10%);
+    color: $secondary-color;
+  }
+}
+
+// Forms
+input,
+textarea,
+select {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: $spacing-unit-half;
+  width: 100%;
+  font-size: $font-size-base;
+  margin-bottom: $spacing-unit;
+  transition: border-color $transition-speed $transition-ease;
+
+  &:focus {
+    border-color: $highlight-color;
+    outline: none;
+  }
 }
