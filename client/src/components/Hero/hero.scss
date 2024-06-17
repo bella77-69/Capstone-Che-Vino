@@ -2,13 +2,14 @@
 @import '../../partials/variables';
 
 .hero {
-  background-image: url('../../assets/images/wine-background-1.png');
+  background-image: url('../../assets/images/wine-glass.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: $font;
   position: relative;
   min-height: 100vh;
+  padding: 4rem 1rem;
 
   &::before {
     content: "";
@@ -23,10 +24,10 @@
   .hero-container {
     position: relative;
     z-index: 1;
-    display: grid;
-    padding: 32px 16px;
+    // display: grid;
+    // padding: 32px 16px;
     margin: 0 auto;
-    grid-template-columns: repeat(12, 1fr);
+    // grid-template-columns: repeat(12, 1fr);
     padding-bottom: 64px;
 
     @media (min-width: 1024px) {
@@ -34,10 +35,15 @@
     }
 
     .hero-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
       margin-right: auto;
       align-self: center;
       grid-column: span 12 / span 12;
-      padding: 20px;
+      // padding: 20px;
 
       @media (min-width: 1024px) {
         grid-column: span 7 / span 7;
@@ -45,8 +51,10 @@
       }
 
       h1 {
+        text-align: center;
+
         max-width: 640px;
-        margin-bottom: 16px;
+        margin-bottom: 32px;
         font-size: 2.25rem;
         font-weight: 800;
         line-height: 1.2;
@@ -64,8 +72,10 @@
       }
 
       p {
+        text-align: center;
+
         max-width: 640px;
-        margin-bottom: 24px;
+        margin-bottom: 32px;
         font-weight: 300;
         color: #efe7e8;
 
@@ -75,7 +85,7 @@
 
         @media (min-width: 1024px) {
           font-size: 1.25rem;
-          margin-bottom: 32px;
+          margin-bottom: 44px;
         }
       }
 
