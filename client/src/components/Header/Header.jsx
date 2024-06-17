@@ -11,7 +11,7 @@ export default function Header() {
           <Navbar.Brand href="/">
             <img
               className="nav-logo d-inline-block align-middle mr-2"
-              width="100"
+              width="120"
               alt="logo-img"
               src={logo}
             />

@@ -1,28 +1,58 @@
+// import React from "react";
+// import logo from "../../assets/images/wine-background.jpg";
+// import "./hero.scss";
+
+// const Hero = () => {
+//   return (
+//     <section className="hero">
+//       <div className="hero-container">
+//         <div className="hero-text">
+//           <h1>
+//             Discover Exceptional Wines with Che Vino
+//           </h1>
+//           <p>
+//             Discover wines with ease using Che Vino! Randomly select from Red,
+//             White, Dessert, Port, Rose, or Sparkling varieties. Explore our top
+//             20 wines on the search page, complete with comments, scores, and
+//             prices. Drink responsibly!
+//           </p>
+//           <a href="/contact" className="hero-button">
+//             Contact Us
+//           </a>
+//         </div>
+//         <div className="hero-image">
+//           <img src={logo} alt="che vino logo" />
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Hero;
 import React from "react";
 import "./hero.scss";
 
-function Hero() {
+const Hero = () => {
   return (
-    <div className="hero hero-image">
-      <div className="hero-overlay"></div>
-      <div className="hero-content hero-table">
-        <div className="hero-cell">
-          
-            <p className="hero-smaller">
-            Buying wine can be overwhelming, due to the variety of wines on the
-            shelves. The Che Vino helps take the guess work out of making that
-            decision. Che Vino determines a bottle of wine at random. You have
-            the choice of the different types of wine avaiable, such as Red,
-            White, Dessert, Port, Rose, or Sparkling Wine. Checkout the seach
-            page that shows the top 20 wines. There you can read comments about
-            the wine, see the wine score, and the average price. Enjoy, and
-            remember to drink responsible!
-            </p>
-          </div>
-      
+    <section className="hero">
+      <div className="hero-container">
+        <div className="hero-text">
+          <h1>
+            Discover Exceptional Wines with Che Vino
+          </h1>
+          <p>
+            Discover wines with ease using Che Vino! Randomly select from Red,
+            White, Dessert, Port, Rose, or Sparkling varieties. Explore our top
+            20 wines on the search page, complete with comments, scores, and
+            prices. Drink responsibly!
+          </p>
+          <a href="/contact" className="hero-button">
+            Contact Us
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default Hero;
