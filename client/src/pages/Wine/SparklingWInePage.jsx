@@ -44,7 +44,8 @@ export default function SparklingWinePage() {
 
   return (
     <section className="wine-section">
-      <div className="container">
+        <div>
+      {/* <div className="container"> */}
         <header className="section-header">
           <h1 className="section-title">Celebrate with Sparkling Wines</h1>
           <p className="section-text">

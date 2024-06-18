@@ -42,7 +42,8 @@ export default function RedWinePage() {
 
   return (
     <section className="wine-section">
-      <div className="container">
+      {/* <div className="container"> */}
+      <div>
         <header className="section-header">
           <h1 className="section-title"> Savor the Richness of Red Wines</h1>
           <p className="section-text">

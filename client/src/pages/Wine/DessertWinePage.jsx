@@ -44,7 +44,8 @@ export default function DessertWinePage() {
 
   return (
     <section className="wine-section">
-      <div className="container">
+        <div>
+      {/* <div className="container"> */}
         <header className="section-header">
           <h1 className="section-title">Discover Exquisite Dessert Wines</h1>
           <p className="section-text">

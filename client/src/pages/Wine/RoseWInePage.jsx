@@ -42,7 +42,8 @@ export default function RoseWinePage() {
 
   return (
     <section className="wine-section">
-      <div className="container">
+      {/* <div className="container"> */}
+      <div>
         <header className="section-header">
           <h1 className="section-title">
             {" "}

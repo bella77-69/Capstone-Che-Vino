@@ -14,6 +14,7 @@ import ContactPage from "./pages/Contact";
 import ReviewPage from "./pages/Reviews";
 import Reviews from "./components/Reviews/Reviews";
 import LeaveReview from "./components/Reviews/LeaveReview";
+import WineGenerator from "./pages/Wine/WineGenerator";
 
 function App() {
 
@@ -25,8 +26,9 @@ function App() {
       <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/search' element={<Search />} />
-      <Route path='/wines/reds' element={<RedWinePage />} />
-      <Route path='/wines/whites' element={<WhiteWinePage />} />
+      <Route path='/wine-generator' element={<WineGenerator />} />
+      <Route path='/wines/red' element={<RedWinePage />} />
+      <Route path='/wines/white' element={<WhiteWinePage />} />
       <Route path='/wines/sparkling' element={<SparklingWinePage />} />
       <Route path='/wines/port' element={<PortWinePage />} />
       <Route path='/wines/rose' element={<RoseWinePage />} />

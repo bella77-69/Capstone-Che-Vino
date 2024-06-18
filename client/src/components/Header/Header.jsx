@@ -24,8 +24,9 @@ export default function Header() {
               <Nav.Link href="/contact" className="nav-bar">Contact</Nav.Link>
               <Nav.Link href="/reviews" className="nav-bar">Reviews</Nav.Link>
               <NavDropdown title="Wine Generator" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/wines/reds">Red Wine Generator</NavDropdown.Item>
-                <NavDropdown.Item href="/wines/whites">White Wine Generator</NavDropdown.Item>
+              <NavDropdown.Item href="/wine-generator">Wine Generator</NavDropdown.Item>
+                <NavDropdown.Item href="/wines/red">Red Wine Generator</NavDropdown.Item>
+                <NavDropdown.Item href="/wines/white">White Wine Generator</NavDropdown.Item>
                 <NavDropdown.Item href="/wines/sparkling">Sparkling Wine Generator</NavDropdown.Item>
                 <NavDropdown.Item href="/wines/port">Port Wine Generator</NavDropdown.Item>
                 <NavDropdown.Item href="/wines/rose">Rose Wine Generator</NavDropdown.Item>
