@@ -1,35 +1,37 @@
 @import "../../partials/variables";
 @import "../../partials/_mixins";
 
-.wine-section {
+.wine-gen-section {
   background-color: #1a202c;
   color: #ffffff;
-  padding: 40px 20px;
+  padding: 20px;
+  height: auto;
 }
 
-.container {
+.wine-gen-container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
-.section-header {
+.wine-gen-section-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  margin-top: 2rem;
 }
 
-.section-title {
+.wine-gen-section-title {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.section-text {
+.wine-gen-section-text {
   font-size: 1.25rem;
   line-height: 1.6;
 }
 
-.wine-card {
+.wine-gen-card {
   display: flex;
   flex-direction: column;
   background-color: #2d3748;
@@ -39,81 +41,88 @@
   padding: 2rem;
 }
 
-.wine-content {
+.wine-gen-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.wine-image {
-//   width: 100%;
-  max-width: 300px;
-  margin-bottom: 20px;
+.wine-gen-image {
+  max-width: 200px;
 }
 
-.wine-img {
-    max-width: 300px;
-    height: auto;
+.wine-gen-img {
+  max-width: 300px;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.wine-details {
+.wine-gen-details {
   text-align: center;
 }
 
-.wine-name {
-  font-size: 2rem;
+.wine-gen-name {
+  width: 100%;
+  max-width: 300px;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #ffffff;
   margin-bottom: 10px;
+  white-space: normal;
+  word-wrap: break-word;
+  color: #ffffff;
 }
 
-.wine-stats {
+.wine-gen-stats {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-.review-stats {
+.wine-gen-review-stats {
   display: flex;
   align-items: center;
   margin-right: 20px;
 }
 
-.rating-stats {
+.wine-gen-rating-stats {
   display: flex;
   align-items: center;
 }
 
-.review-icon {
+.wine-gen-review-icon {
   width: 20px;
   height: 20px;
   stroke: #ff4d4f;
   margin-right: 5px;
 }
 
-.review-text {
+.wine-gen-review-text {
   color: #cbd5e0;
 }
 
-.rating-text {
+.wine-gen-rating-text {
   color: #cbd5e0;
 }
 
-.winery {
+.wine-gen-winery {
   font-size: 1.5rem;
   margin-bottom: 5px;
   color: #cbd5e0;
+  width: 100%;
+  max-width: 300px;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
-.type, .location {
+.wine-gen-type, .wine-gen-location {
   font-size: 1rem;
   margin-bottom: 20px;
   color: #cbd5e0;
 }
 
-.wine-button {
+.wine-gen-button {
   background-color: #805ad5;
   color: #ffffff;
   border: none;
@@ -125,11 +134,11 @@
   margin-bottom: 20px;
 }
 
-.wine-button:hover {
+.wine-gen-button:hover {
   background-color: #6b46c1;
 }
 
-.wine-select {
+.wine-gen-select {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -140,49 +149,68 @@
 }
 
 @media (min-width: 576px) {
-  .wine-content {
+  .wine-gen-content {
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: space-around
   }
 
-  .wine-image {
+  .wine-gen-image {
     margin-bottom: 0;
-    margin-right: 20px;
   }
 
-  .wine-details {
+  .wine-gen-details {
     text-align: left;
+    width: 70%;
+  }
+
+  .wine-gen-name {
+    max-width: 335px;
+  }
+
+  .wine-gen-winery {
+    max-width: 335px;
+  }
+
+  .wine-gen-stats {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .wine-gen-button {
+   display: flex;
   }
 }
 
 @media (min-width: 768px) {
-  .wine-card {
+  .wine-gen-card {
     padding: 3rem;
   }
 }
 
 @media (min-width: 992px) {
-  .section-title {
+  .wine-gen-section-title {
     font-size: 3rem;
   }
 
-  .section-text {
+  .wine-gen-section-text {
     font-size: 1.5rem;
   }
 
-  .wine-name {
-    font-size: 2.5rem;
+  .wine-gen-name {
+    font-size: 2rem;
+    max-width: 100%;
   }
 
-  .winery {
+  .wine-gen-winery {
     font-size: 1.75rem;
+    max-width: 100%;
   }
 
-  .type, .location {
+  .wine-gen-type, .wine-gen-location {
     font-size: 1.25rem;
   }
 
-  .wine-button {
+  .wine-gen-button {
     font-size: 1.25rem;
   }
 }

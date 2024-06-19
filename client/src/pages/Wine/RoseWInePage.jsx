@@ -41,59 +41,59 @@ export default function RoseWinePage() {
   };
 
   return (
-    <section className="wine-section">
-      {/* <div className="container"> */}
-      <div>
-        <header className="section-header">
-          <h1 className="section-title">
+    <section className="wines-section">
+      <div className="wines-container">
+     
+        <header className="wines-section-header">
+          <h1 className="wines-section-title">
             {" "}
             Experience the Elegance of Rosé Wines
           </h1>
-          <p className="section-text">
+          <p className="wines-section-text">
             Enjoy our exquisite collection of rosé wines, perfect for any
             occasion.
           </p>
         </header>
-        <div className="wine-card">
-          <div className="wine-content">
-            <div className="wine-image">
+        <div className="wines-card">
+          <div className="wines-content">
+            <div className="wines-image">
               <img
                 src={initialWine.image}
                 alt="wine-img"
-                className="wine-img"
-                style={{ maxWidth: "100%", height: "auto" }}
+                className="wines-img"
+ 
               />
             </div>
-            <div className="wine-details">
-              <h1 className="wine-name">{initialWine.wine}</h1>
-              <div className="wine-stats">
-                <div className="review-stats">
+            <div className="wines-details">
+              <h1 className="wines-name">{initialWine.wine}</h1>
+              <div className="wines-stats">
+                <div className="wines-review-stats">
                   <svg
                     fill="currentColor"
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="review-icon"
+                    className="wines-review-icon"
                     viewBox="0 0 24 24"
                   >
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
                   </svg>
-                  <span className="review-text">
+                  <span className="wines-review-text">
                     {initialWine.reviews} reviews
                   </span>
                 </div>
-                <div className="rating-stats">
-                  <span className="rating-text">
+                <div className="wines-rating-stats">
+                  <span className="wines-rating-text">
                     Rating: {initialWine.average}/5
                   </span>
                 </div>
               </div>
-              <h2 className="winery">{initialWine.winery}</h2>
-              <p className="location">{initialWine.location}</p>
+              <h2 className="wines-winery">{initialWine.winery}</h2>
+              <p className="wines-location">{initialWine.location}</p>
 
               <button
-                className="wine-button"
+                className="wines-button"
                 onClick={handleWineGeneratorClick}
               >
                 Generate Random Wine
