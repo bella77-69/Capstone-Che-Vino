@@ -31,7 +31,7 @@ export default function Search() {
     <section className="wine-section">
       <div className="container">
         <h1 className="section-title">Search By Year</h1>
-        <div className="row justify-content-center">
+        <div>
           <div className="search-wrapper">
             <div className="form">
             <FaSearch className="search-icon" />
@@ -57,9 +57,7 @@ export default function Search() {
                   alt="wine"
                 />
                 <div className="card-body">
-                  <h5 className="title">{value.wine}</h5>
-                  <h6 className="subtitle mb-2">Winery: {value.winery}</h6>
-                  <div className="review-stats d-flex align-items-center">
+                <div className="review-stats d-flex align-items-center">
                     <svg
                       fill="currentColor"
                       stroke="currentColor"
@@ -75,7 +73,11 @@ export default function Search() {
                       Reviews: {value.reviews}
                     </span>
                   </div>
+                  <h5 className="title">{value.wine}</h5>
+                  <h6 className="subtitle mb-2">Winery: {value.winery}</h6>
                   <p className="text mt-2">Average Rating: {value.average}</p>
+         
+                  
                 </div>
               </div>
             </div>

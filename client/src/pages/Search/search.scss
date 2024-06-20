@@ -1,3 +1,182 @@
+// @import "../../partials/variables";
+// @import "../../partials/mixins";
+
+// .wine-section {
+// background-color: #1a202c;
+// color: #ffffff;
+// padding: 40px 20px;
+// }
+
+// .container {
+// max-width: 960px;
+// margin: 0 auto;
+// }
+
+// .section-header {
+// text-align: center;
+// margin-bottom: 40px;
+// }
+
+// .section-title {
+// font-size: 2.5rem;
+// font-weight: bold;
+// margin-bottom: 10px;
+// }
+
+// .section-text {
+// font-size: 1.25rem;
+// line-height: 1.6;
+// }
+
+// .wine-card {
+// display: flex;
+// background-color: #2d3748;
+// border-radius: 15px;
+// box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+// overflow: hidden;
+// padding: 2rem;
+// }
+
+// .wine-content {
+// display: flex;
+// flex: 1;
+// align-items: center;
+// }
+
+// .wine-image {
+// flex: 1;
+// max-width: 300px;
+// }
+
+// .wine-img {
+// max-width: 300px;
+// height: auto;
+// object-fit: cover;
+// margin: 20px 0;
+// }
+
+// .card {
+//   background-color: #2d3748 !important;
+//   border: 1px solid #ddd;
+//   border-radius: 8px;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   height: 350px; // Set a fixed height for the card
+//   overflow: hidden;
+// }
+
+// .card-img-top {
+// max-width: 40px;
+// height: 160px;
+// object-fit: cover;
+// margin-top: 1rem;
+// }
+
+// .card-body {
+//   padding: 1.25rem;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   width: 100%;
+//   text-align: center;
+//   flex-grow: 1;
+//   overflow: hidden;
+// }
+
+// .wine-details {
+// flex: 1;
+// padding: 20px;
+// text-align: center;
+// }
+
+// .wine-name {
+// font-size: 2rem;
+// font-weight: bold;
+// color: #ffffff;
+// margin-bottom: 10px;
+// }
+
+// .wine-stats {
+// display: flex;
+// justify-content: center;
+// margin-bottom: 20px;
+// }
+
+
+// .rating-stats {
+// display: flex;
+// align-items: center;
+// }
+
+// .search-icon {
+// margin-right: 10px;
+// vertical-align: middle;
+// }
+
+// .review {
+// color: #ffffff;
+// }
+
+// .text {
+// color: #fafafa;
+// }
+
+// .subtitle {
+//   color: #ffffff;
+//   font-size: 1rem;
+// }
+
+// .winery {
+// font-size: 1.5rem;
+// margin-bottom: 5px;
+// color: #ffffff;
+// }
+
+// .search-icon {
+// font-size: 1.2rem;
+// margin-right: 10px;
+// vertical-align: middle;
+// }
+
+// .form-input {
+// padding: 10px;
+// border: 1px solid #ccc;
+// border-radius: 4px;
+// background-color: #f8f9fa;
+// width: 100%;
+// }
+
+
+// .title {
+//   font-size: 1.2rem;
+//   color: #ffffff;
+//   margin-bottom: 10px;
+//   white-space: nowrap; // Ensure the text does not wrap
+//   overflow: hidden; // Hide overflow text
+//   text-overflow: ellipsis; // Display ellipsis for overflow text
+// }
+
+// .review-stats {
+//   color: #ffffff;
+//   font-size: 0.9rem;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-bottom: 10px;
+// }
+
+// .review-icon {
+// width: 18px;
+// height: 18px;
+// margin-right: 5px;
+// stroke: #ff4d4f;
+// }
+
+// .search-wrapper {
+// width: 100%;
+// }
 @import "../../partials/variables";
 @import "../../partials/mixins";
 
@@ -53,30 +232,37 @@
   height: auto;
   object-fit: cover;
   margin: 20px 0;
-  // padding-left: 116px
 }
 
 .card {
-  border: none; 
+  background-color: #2d3748 !important;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 350px; // Set a fixed height for the card
+  overflow: hidden;
 }
 
-.card .card-img-top {
+.card-img-top {
   max-width: 40px;
-  height: 160px; 
-  object-fit: cover; 
+  height: 160px;
+  object-fit: cover;
   margin-top: 1rem;
 }
 
 .card-body {
   padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  flex-grow: 1;
+  overflow: hidden;
 }
-
 
 .wine-details {
   flex: 1;
@@ -97,27 +283,14 @@
   margin-bottom: 20px;
 }
 
-.review-stats {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-}
-
 .rating-stats {
   display: flex;
   align-items: center;
 }
 
-.review-icon {
-  width: 20px;
-  height: 20px;
-  stroke: #ff4d4f;
-  margin-right: 5px;
-}
-
 .search-icon {
-  margin-right: 10px; 
-  vertical-align: middle; 
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .review {
@@ -128,80 +301,156 @@
   color: #fafafa;
 }
 
+.subtitle {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
 .winery {
   font-size: 1.5rem;
   margin-bottom: 5px;
   color: #ffffff;
 }
 
-.location {
-  font-size: 1rem;
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-.wine-button {
-  background-color: #805ad5;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 1rem;
-}
-
-.wine-button:hover {
-  background-color: #6b46c1;
-}
-
 .search-icon {
-  font-size: 1.2rem; 
-  margin-right: 10px; 
-  vertical-align: middle; 
+  font-size: 1.2rem;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .form-input {
-  padding: 10px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  background-color: #f8f9fa; 
-  width: 100%; 
-}
-
-.card {
-  background-color: #2d3748 !important;
-  border: 1px solid #ddd; 
-  border-radius: 8px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  width: 100%;
 }
 
 .title {
-  font-size: 1.2rem; 
-  color: #ffffff; 
-}
-
-.subtitle {
-  color: #ffffff; 
-  font-size: 1rem; 
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  white-space: nowrap; // Ensure the text does not wrap
+  overflow: hidden; // Hide overflow text
+  text-overflow: ellipsis; // Display ellipsis for overflow text
 }
 
 .review-stats {
-  color: #ffffff; 
-  font-size: 0.9rem; 
+  color: #ffffff;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .review-icon {
   width: 18px;
-  height: 18px; 
-  margin-right: 5px; 
+  height: 18px;
+  margin-right: 5px;
+  stroke: #ff4d4f;
 }
 
 .search-wrapper {
   width: 100%;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .section-text {
+    font-size: 1.15rem;
+  }
+
+  .card {
+    height: 330px; // Adjust height for smaller screens
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-text {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    height: 310px; // Adjust height for smaller screens
+  }
+
+  .card-body {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+  }
+
+  .card {
+    height: 290px; // Adjust height for smaller screens
+  }
+
+  .card-body {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-text {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    height: 270px; // Adjust height for smaller screens
+  }
+
+  .card-body {
+    padding: 0.5rem;
+  }
+
+  .wine-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .review-stats {
+    font-size: 0.8rem;
+  }
 }
