@@ -8,7 +8,7 @@ Che Vino is designed to help the user discover new wines, read reviews, and chec
 
 It was built using React + vite, Sass, Node, Express.js, and mySQL.
 
-![image](https://user-images.githubusercontent.com/77593772/134760073-3b3b3b7b-3b7b-4b7b-8b7b-3b7b3b7b3b7b.png)
+![image]('./homePage.png')
 
 ## Project Overview
 
