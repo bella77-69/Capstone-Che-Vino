@@ -11,7 +11,6 @@ It was built using React + vite, Sass, Node, Express.js, and mySQL.
 <div>
 <img src='./homePage.png' width='400px' height='300px'>
 <br>
-<br>
 <img src='./wineGen.png' width='150px' height='300px'>
 </div>  
 
@@ -56,15 +55,16 @@ The target audience for Che Vino is anyone who enjoys wine and is looking to dis
 ## Project Structure
 
 ### 3.1 Client
-- `src/` - Contains the client-side code
-  - `components/` - Contains the React components
-  - `pages/` - Contains the pages
-  - `styles/` - Contains the Sass files
+- `client/` - Contains the client-side code
+    - `src/` - Contains the client-side code
+        - `components/` - Contains the React components
+        - `pages/` - Contains the pages
+        - `styles/` - Contains the Sass files
   
 ### 3.2 Server
 - `server/` - Contains the server-side code
   - `routes/` - Contains the routes
-  - `db/` - Contains the database connection
+  - `config/` - Contains the database connection
   - `server.js` - The server file
   - `controllers.js` - The controller file
   - `models.js` - The model file
