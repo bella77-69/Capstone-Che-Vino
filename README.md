@@ -13,7 +13,7 @@ It was built using React + vite, Sass, Node, Express.js, and mySQL.
 <br>
 <br>
 <img src='./wineGen.png' width='150px' height='300px'>
-
+</div>  
 
 ## Project Overview
 
