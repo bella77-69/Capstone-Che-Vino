@@ -53,6 +53,7 @@ export default function RoseWinePage() {
             Enjoy our exquisite collection of rosé wines, perfect for any
             occasion.
           </p>
+          <div className="wines-divider"></div>
         </header>
         <div className="wines-card">
           <div className="wines-content">

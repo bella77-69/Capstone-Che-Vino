@@ -50,6 +50,7 @@ export default function WhiteWinePage() {
             Savor our handpicked collection of exquisite white wines from
             vineyards around the globe.
           </p>
+          <div className="wines-divider"></div>
         </header>
         <div className="wines-card">
           <div className="wines-content">

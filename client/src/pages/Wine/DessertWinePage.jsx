@@ -51,6 +51,7 @@ export default function DessertWinePage() {
             Indulge in our curated selection of dessert wines from around the
             world.
           </p>
+          <div className="wines-divider"></div>
         </header>
         <div className="wines-card">
           <div className="wines-content">

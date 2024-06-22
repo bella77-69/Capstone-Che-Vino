@@ -51,10 +51,12 @@ export default function ContactPage() {
     <section className="wine-section">
       <div className="container">
         <div className="text-center">
-          <Title title="Contact Che Vino" />
-          <p className="form-subtitle">
-            For inquiries, support requests, or general questions
+        <header className="wines-section-header">
+          <h1 className="wines-section-title">Contact Che Vino</h1>
+          <p className="wines-section-text">
+          For Inquiries, Support Requests or General Questions
           </p>
+        </header>  
         </div>
 
         <div className="row justify-content-center">
@@ -128,7 +130,7 @@ export default function ContactPage() {
         </div>
 
         <div className="container mt-5">
-          <Contact />
+          {/* <Contact /> */}
         </div>
       </div>
     </section>

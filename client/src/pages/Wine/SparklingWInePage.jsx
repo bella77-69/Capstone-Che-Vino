@@ -52,6 +52,7 @@ export default function SparklingWinePage() {
             Discover our exclusive selection of sparkling wines perfect for any
             celebration.
           </p>
+          <div className='wines-divider'></div>
         </header>
         <div className="wines-card">
           <div className="wines-content">

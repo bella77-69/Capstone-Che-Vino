@@ -2,8 +2,8 @@
 @import "../../partials/mixins";
 
 .wine-section {
-  background-color: #1a202c;
-  color: #ffffff;
+  background-color: $section-background;
+  color: $font;
   padding: 40px 20px;
 }
 
@@ -30,8 +30,9 @@
 
 .wine-card {
   display: flex;
-  background-color: #2d3748;
+  background-color: $card-background;
   border-radius: 15px;
+  border: 1px solid $divider;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   padding: 2rem;
@@ -56,11 +57,11 @@
 }
 
 .card {
-  border: none; 
+  border: none;
   height: 350px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,8 +69,8 @@
 
 .card .card-img-top {
   max-width: 40px;
-  height: 160px; 
-  object-fit: cover; 
+  height: 160px;
+  object-fit: cover;
   margin-top: 1rem;
 }
 
@@ -95,7 +96,7 @@
 .wine-name {
   font-size: 2rem;
   font-weight: bold;
-  color: #ffffff;
+  color: $font;
   margin-bottom: 10px;
 }
 
@@ -115,54 +116,54 @@
 .rating-stats {
   display: flex;
   align-items: center;
- 
+
 }
 
 .review-icon {
   width: 20px;
   height: 20px;
-  stroke: #ff4d4f;
+  stroke: $highlight-color;
   margin-right: 5px;
 }
 
 .search-icon {
   font-size: 1.2rem;
-  margin-right: 10px; 
-  vertical-align: middle; 
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .review {
-  color: #ffffff;
+  color: $font;
 }
 
 .text {
-  color: #fafafa;
+  color: $font;
 }
 
 .winery {
   font-size: 1.5rem;
   margin-bottom: 5px;
-  color: #ffffff;
+  color: $font;
 }
 
 .form-input {
-  padding: 10px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  background-color: #f8f9fa; 
-  width: 100%; 
+  padding: 10px;
+  border: 1px solid $cement;
+  border-radius: 4px;
+  background-color: $font;
+  width: 100%;
 }
 
 .card {
-  background-color: #2d3748 !important;
-  border: 1px solid #ddd; 
-  border-radius: 8px; 
+  background-color: $card-background !important;
+  border: 1px solid $cement;
+  border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .title {
   font-size: 1.2rem;
-  color: #ffffff;
+  color: $font;
   margin-bottom: 10px;
   word-wrap: break-word;
   max-width: 99%;
@@ -172,19 +173,19 @@
 }
 
 .subtitle {
-  color: #ffffff; 
-  font-size: 1rem; 
+  color: $font;
+  font-size: 1rem;
 }
 
 .review-stats {
-  color: #ffffff; 
-  font-size: 0.9rem; 
+  color: $font;
+  font-size: 0.9rem;
 }
 
 .review-icon {
   width: 18px;
-  height: 18px; 
-  margin-right: 5px; 
+  height: 18px;
+  margin-right: 5px;
 }
 
 .search-wrapper {

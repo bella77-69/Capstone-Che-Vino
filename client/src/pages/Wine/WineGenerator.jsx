@@ -30,6 +30,7 @@ const WineGenerator = () => {
           <p className="wine-gen-section-text">
             Randomly select from a variety of wines or choose a specific type to discover.
           </p>
+          <div className='wine-gen-divider'></div>
           <select className="wine-gen-select" onChange={handleWineTypeChange}>
                 <option value="">Select Wine Type</option>
                 <option value="red">Red</option>

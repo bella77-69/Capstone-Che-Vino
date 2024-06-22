@@ -50,6 +50,7 @@ export default function RedWinePage() {
             Explore our diverse selection of red wines, perfect for any
             occasion.
           </p>
+          <div className="wines-divider"></div>
         </header>
         <div className="wines-card">
           <div className="wines-content">

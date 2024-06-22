@@ -3,15 +3,14 @@
 
 .contact {
     margin: 0, auto;
-    background-color: #1a202c;
-    color: #ffffff;
+    background-color: $section-background;
+    color: $font;
   
 
     &-name {
     margin: 0;
     @include Copy;
     color: $font;
-    font-weight: 400;
 
         @include tablet {
         @include deskCopy;
@@ -25,7 +24,7 @@
     &-review {
     @include bodyCopy;
     color: $font;
-    font-weight: 300;
+  
  
 
         @include tablet {
@@ -38,7 +37,7 @@
     }
 
     &-input {
-    border-bottom: 1px solid $black;
+    border-bottom: 1px solid $divider;
     padding-bottom: 1.3125rem;
     }
 

@@ -50,6 +50,7 @@ export default function PortWinePage() {
             Savor our rich selection of port wines, a perfect finish to any
             meal.
           </p>
+          <div className="wines-divider"></div>
         </header>
         <div className="wines-card">
           <div className="wines-content">

@@ -2,8 +2,8 @@
 @import "../../partials/_mixins";
 
 .wines-section {
-  background-color: #1a202c;
-  color: #ffffff;
+  background-color: $section-background;
+  color: $font;
   padding: 20px;
   height: auto;
 }
@@ -31,10 +31,16 @@
   line-height: 1.6;
 }
 
+.wines-divider {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $highlight-color;
+}
+
 .wines-card {
   display: flex;
   flex-direction: column;
-  background-color: #2d3748;
+  background-color: $card-background;
+  border: 1px solid $highlight-color;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -70,7 +76,7 @@
   margin-bottom: 10px;
   white-space: normal;
   word-wrap: break-word;
-  color: #ffffff;
+  color: $font;
 }
 
 .wines-stats {
@@ -94,22 +100,22 @@
 .wines-review-icon {
   width: 20px;
   height: 20px;
-  stroke: #ff4d4f;
+  stroke: $highlight-color;
   margin-right: 5px;
 }
 
 .wines-review-text {
-  color: #cbd5e0;
+  color: $font;
 }
 
 .wines-rating-text {
-  color: #cbd5e0;
+  color: $font;
 }
 
 .wines-winery {
   font-size: 1.5rem;
   margin-bottom: 5px;
-  color: #cbd5e0;
+  color: $font;
   width: 100%;
   max-width: 300px;
   white-space: normal;
@@ -119,12 +125,12 @@
 .wines-type, .wines-location {
   font-size: 1rem;
   margin-bottom: 20px;
-  color: #cbd5e0;
+  color: $font;
 }
 
 .wines-button {
-  background-color: #805ad5;
-  color: #ffffff;
+  background-color: $highlight-color;
+  color: $font;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -135,14 +141,14 @@
 }
 
 .wines-button:hover {
-  background-color: #6b46c1;
+  background-color: darken($highlight-color, 10%);
 }
 
 .wines-select {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid $font;
   border-radius: 4px;
-  background-color: #f8f9fa;
+  background-color: $bg-light;
   width: 100%;
   max-width: 200px;
   margin: 0 auto;

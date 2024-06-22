@@ -53,9 +53,14 @@ const ReviewPage = () => {
 
   return (
     <section className="wine-section">
+      
       <div className="d-flex justify-content-center container">
+      <header className="wines-section-header">
+          <h1 className="wines-section-title">Wine Reviews</h1>
+      <div className="wines-divider"></div>
+
+        </header> 
         <div className="card p-3 text-white">
-          <Title title="Wine Reviews" />
           <div className="about-product">
             {items.map((item, index) => (
               <div className="mt-0 mt-4" key={index}>
@@ -63,7 +68,7 @@ const ReviewPage = () => {
                 <h4 className="card-title mt-4 mx-3">{item.wine}</h4>
                 <h5 className="card-subtitle mx-3 mt-2">{item.style}</h5>
                 <h5 className="card-subtitle mx-3 mt-2">{item.price}</h5>
-                <h5 className="card-subtitle mx-3 mt-2 text-muted font-italic">{item.review}</h5>
+                <h5 className="card-subtitle mx-3 mt-2">{item.review}</h5>
                 <p className="card-text p-y-1 mx-3 mt-2">Rating: {item.rating}</p>
                 <button className="btn mx-3 mt-2 border-dark" onClick={(e) => handleSubmit(item.id, e)}>
                   <Link to={`/reviews/${item.id}`} className="card-link">
