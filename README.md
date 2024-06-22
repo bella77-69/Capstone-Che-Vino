@@ -1,71 +1,66 @@
 # Che Vino
 
-For my capstone project I created a web application called Che Vino – translation from Italian: What Wine!
+For my capstone project, I created a web application called Che Vino – translation from Italian: "What Wine!"
 
-My idea came from the wine world can be overwhelming with all the many choices that it provides. There are hundreds of different varieties of wine and I am usually the one standing in the wine section unsure of what wine to choose.
+## Introduction
 
-Che Vino is designed to help the user discover new wines, read reviews, and check out wine scores. It helps take the guess work out of making that wine decision.
+Che Vino addresses the overwhelming choices in the wine world by helping users discover new wines, read reviews, and check out wine scores. It simplifies the decision-making process when selecting a wine.
 
-It was built using React + vite, Sass, Node, Express.js, and mySQL.
+Built with React + Vite, Sass, Node, Express.js, and MySQL, Che Vino is designed to enhance the wine-buying experience.
 
-<div>
-<img src='./homePage.png' width='400px' height='300px'>
-<br>
-<img src='./wineGen.png' width='150px' height='300px'>
+<div style="display: flex; justify-content: space-around;">
+  <img src='./homePage.png' alt="Home Page" width='400px' height='300px'>
+  <img src='./wineGen.png' alt="Wine Generator" width='150px' height='300px'>
 </div>  
 
 ## Project Overview
 
-### 1.1 Description
-An web application that allows the user to display a random bottle of wine based on the variety of their choice. E.g. Red, White, Port, Rose, Sparkling, and Dessert wine.
+### Description
+Che Vino is a web application that displays a random bottle of wine based on the user's selected variety, such as Red, White, Port, Rosé, Sparkling, and Dessert wine.
 
-### 1.2 Problem
-Purchasing wine can be overwhelming, due to the variety of wines on the shelves. The Che Vino takes the guess work out of making that decision. Che Vino determines a bottle of wine at random. The user has the choice of the different types of wine available, such as Red, White, Rose, Port, Dessert, and Sparkling. The user will receive the name of the wine along with an image, location of the winery, and the year.
+### Problem
+With hundreds of wine varieties available, choosing the right wine can be overwhelming. Che Vino removes the guesswork by suggesting a random bottle based on the user's choice of wine type, providing the wine's name, image, winery location, and year.
 
-### 1.3 Solution
-Che Vino is designed to help the user discover new wines, read reviews, and check out wine scores. It helps take the guess work out of making that wine decision.
+### Solution
+Che Vino assists users in discovering new wines, reading reviews, and checking wine scores, making the wine selection process easier.
 
-### 1.4 Target Audience
-The target audience for Che Vino is anyone who enjoys wine and is looking to discover new wines.
+### Target Audience
+Wine enthusiasts looking to discover new wines and simplify their selection process.
 
-### 1.5 Tech Stack
-- React
-- Vite
-- Sass
-- Node
-- Express.js
-- mySQL
+### Tech Stack
+Frontend: React, Vite, Sass
+Backend: Node, Express.js, MySQL
 
 ## Project Setup
 
-### 2.1 Installation
+### Installation
 1. Clone the repository
 2. Run `npm install` to install the dependencies
-3. Run `npm run dev` to start the development server
+3. Run `npm start` to start the development server
 
-### 2.2 Dependencies
-- vite
-- react
-- react-dom
-- sass
-- axios
-- express
-- mysql
+### Dependencies
+`vite`
+`react`
+`react-dom`
+`sass`
+`axios`
+`express`
+`mysql`
 
 ## Project Structure
 
-### 3.1 Client
+### Client
 - `client/` - Contains the client-side code
-    - `src/` - Contains the client-side code
+    - `src/` - Contains the main source code
         - `components/` - Contains the React components
-        - `pages/` - Contains the pages
+        - `pages/` - Contains the application pages
         - `styles/` - Contains the Sass files
   
-### 3.2 Server
+### Server
 - `server/` - Contains the server-side code
   - `routes/` - Contains the routes
-  - `config/` - Contains the database connection
-  - `server.js` - The server file
-  - `controllers.js` - The controller file
-  - `models.js` - The model file
+  - `config/` - Contains the database configuration
+  - `server.js` - The server entry point
+  - `controllers.js` - The controller logic
+  - `models.js` - The data models
 
