@@ -10,12 +10,9 @@ It was built using React + vite, Sass, Node, Express.js, and mySQL.
 
 <div>
 <img src='./homePage.png' width='400px' height='300px'>
-
-
-<div>
+<br>
+<br>
 <img src='./wineGen.png' width='150px' height='300px'>
-</div>
-
 
 
 ## Project Overview
