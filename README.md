@@ -48,19 +48,6 @@ The target audience for Che Vino is anyone who enjoys wine and is looking to dis
 - express
 - mysql
 
-### 2.3 Dev Dependencies
-- @vitejs/plugin-react
-- @vitejs/plugin-react-swc
-- eslint
-- eslint-plugin-react
-- eslint-plugin-react-hooks
-- eslint-plugin-jsx-a11y
-- eslint-plugin-import
-- eslint-plugin-jsx-a11y
-- eslint-plugin-react
-- eslint-plugin-react-hooks
-- eslint-plugin-jsx-a11y
-
 ## Project Structure
 
 ### 3.1 Client
