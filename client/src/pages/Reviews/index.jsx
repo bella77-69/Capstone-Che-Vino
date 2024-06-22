@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useParams, useNavigate } from 'react-router-dom';
-import Title from '../../components/Title/Title';
-import '../../components/Reviews/reviews.scss';
-
+import './reviewPage.scss';
 
 const ReviewPage = () => {
   const [currentItemsId, setCurrentItemsId] = useState('');
@@ -52,33 +50,29 @@ const ReviewPage = () => {
   };
 
   return (
-    <section className="wine-section">
-      
-      <div className="d-flex justify-content-center container">
-      <header className="wines-section-header">
-          <h1 className="wines-section-title">Wine Reviews</h1>
-      <div className="wines-divider"></div>
-
-        </header> 
-        <div className="card p-3 text-white">
-          <div className="about-product">
-            {items.map((item, index) => (
-              <div className="mt-0 mt-4" key={index}>
-                <img className="pl-3" src={item.image} width="100" alt="wine-img" />
-                <h4 className="card-title mt-4 mx-3">{item.wine}</h4>
-                <h5 className="card-subtitle mx-3 mt-2">{item.style}</h5>
-                <h5 className="card-subtitle mx-3 mt-2">{item.price}</h5>
-                <h5 className="card-subtitle mx-3 mt-2">{item.review}</h5>
-                <p className="card-text p-y-1 mx-3 mt-2">Rating: {item.rating}</p>
-                <button className="btn mx-3 mt-2 border-dark" onClick={(e) => handleSubmit(item.id, e)}>
-                  <Link to={`/reviews/${item.id}`} className="card-link">
-                    More Info
-                  </Link>
-                </button>
-              </div>
-            ))}
+    <section className="review-page">
+      <header className="review-page__header">
+        <h1 className="review-page__title">Wine Reviews</h1>
+        <div className="review-page__divider"></div>
+      </header>
+      <div className="review-page__content container">
+        {items.map((item, index) => (
+          <div className="review-page__card card" key={index}>
+            <img className="review-page__image" src={item.image} alt="wine-img" />
+            <div className="review-page__info">
+              <h4 className="review-page__wine">{item.wine}</h4>
+              <h5 className="review-page__style">{item.style}</h5>
+              <h5 className="review-page__price">{item.price}</h5>
+              <h5 className="review-page__review">{item.review}</h5>
+              <p className="review-page__rating">Rating: {item.rating}</p>
+            </div>
+            <button className="review-page__button btn" onClick={(e) => handleSubmit(item.id, e)}>
+              <Link to={`/reviews/${item.id}`} className="review-page__link">
+                More Info
+              </Link>
+            </button>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );

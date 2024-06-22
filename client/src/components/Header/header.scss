@@ -11,6 +11,7 @@
 .nav-bar nav-link {
     padding: 0 2rem;
     margin: 0;
+    color: $font;
 
     &:hover {
         color: $highlight-color;
@@ -33,18 +34,31 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: $font;
+    color: $font ;
     padding: 0 2rem;
     margin: 0;
+
+    &:hover {
+        color: $highlight-color;
+    }
 }
 
 .navbar-nav .dropdown-menu {
     margin: 1.5em;
+    background-color: $primary-color;
+    border-top: 1px solid $divider;
+    color: $font;
+
+}
+
+.dropdown-menu {
+    background-color: $primary-color;
+    border-top: 1px solid $divider;
+    color: $font;
 }
 
 .dropdown-item {
-    color: $font;
-    background-color: $background;
+    color: $font !important;
     border-bottom: 1px solid $divider;
     padding: 0.5rem 1rem;
     margin: 0;
@@ -54,3 +68,4 @@
         background-color: $highlight-color;
     }
 }
+

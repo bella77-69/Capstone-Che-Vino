@@ -3,9 +3,9 @@
 
 // Card Styles
 .card {
-  background-color: $bg-light;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
+  background-color: $card-background;
+  border: 1px solid $highlight-color;
+  border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: $spacing-unit;
   margin-bottom: $spacing-unit;
@@ -13,11 +13,12 @@
   .card-title {
     font-size: $font-size-large;
     margin-bottom: $spacing-unit-half;
+    color: $font;
   }
 
   .card-subtitle {
     font-size: $font-size-small;
-    color: darken($primary-color, 20%);
+    color: $font;
     margin-bottom: $spacing-unit-half;
   }
 
@@ -29,15 +30,15 @@
   .btn {
     background-color: $highlight-color;
     border: none;
-    border-radius: $border-radius;
-    color: $secondary-color;
+    border-radius: 8px;
+    color: $font;
     padding: $spacing-unit-half $spacing-unit;
     transition: background-color $transition-speed $transition-ease;
 
     &:hover,
     &:focus {
       background-color: darken($highlight-color, 10%);
-      color: $secondary-color;
+      color: $primary-color;
     }
   }
 }

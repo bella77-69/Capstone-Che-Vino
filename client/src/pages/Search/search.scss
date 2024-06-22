@@ -31,7 +31,7 @@
 .wine-card {
   display: flex;
   background-color: $card-background;
-  border-radius: 15px;
+  border-radius: 8px;
   border: 1px solid $divider;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -154,12 +154,12 @@
   width: 100%;
 }
 
-.card {
-  background-color: $card-background !important;
-  border: 1px solid $cement;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+// .card {
+//   background-color: $card-background !important;
+//   border: 1px solid $cement;
+//   border-radius: 8px;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+// }
 
 .title {
   font-size: 1.2rem;

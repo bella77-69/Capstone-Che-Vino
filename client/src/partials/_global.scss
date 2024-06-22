@@ -23,7 +23,6 @@ body {
 // Typography
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: $spacing-unit;
-  font-weight: bold;
 }
 
 p {
@@ -32,7 +31,7 @@ p {
 
 // Links
 a {
-  color: $highlight-color;
+  color: $font;
   text-decoration: none;
   transition: color $transition-speed $transition-ease;
 
@@ -59,8 +58,8 @@ input[type="submit"],
 input[type="button"] {
   background-color: $highlight-color;
   border: none;
-  border-radius: $border-radius;
-  color: $highlight-color;
+  border-radius: 8px;
+  color: $font;
   cursor: pointer;
   font-size: $font-size-base;
   padding: $spacing-unit-half $spacing-unit;
@@ -69,7 +68,6 @@ input[type="button"] {
   &:hover,
   &:focus {
     background-color: darken($highlight-color, 10%);
-    color: $secondary-color;
   }
 }
 
@@ -78,7 +76,7 @@ input,
 textarea,
 select {
   border: 1px solid $border-color;
-  border-radius: $border-radius;
+  border-radius: 8px;
   padding: $spacing-unit-half;
   width: 100%;
   font-size: $font-size-base;

@@ -1,26 +1,13 @@
 // Color Variables
 $black: #060404;
 $blacker: #080609;
-$beige: #f5e3d9;
-$dark: #443c44;
-$darkBrown: #3b2c35; 
-$greyish: #232c35;
-$brown: #463731;
 $cement: #777985;
-$mattegrey: #7c848c;
-$darkGrey: #2e2e2e;
-$blueGrey: #343444;
+
 $background: #262423; 
-$darkdarkgrey: #373d47;
-$color: #8c847c;
-$brownRed: #684d4d;
-$lightBeige: #fff4d7;
-$taupe: #7b6c6e;
-$font: #ffffff; 
+$font: #efe7e8; 
 $icon: rgb(8, 8, 8);
 $divider: #9d909b; 
-$darkbackground: rgb(37, 36, 36);
-$lightCream: #f5f5dc;
+
 
 // Font Variables
 $font-family-base: 'DM Sans', sans-serif;
@@ -34,8 +21,8 @@ $spacing-unit-half: 0.5rem; // 8px
 $spacing-unit-double: 2rem; // 32px
 
 // Border Variables
-$border-radius: 4px;
-$border-color: #e5e5e5;
+$border-radius: 8px;
+$border-color: #CD0617;
 
 // Transition Variables
 $transition-speed: 0.3s;
@@ -49,8 +36,9 @@ $secondary-color: #ffffff; // White for text and background
 $highlight-color: #CD0617; // Highlight color for buttons and links
 $bg-light: #f8f9fa; // Light background color
 $card-background: #2d3748;
-$section-background: #1a202c;
-// Font Variables
+// $section-background: #1a202c;
+$section-background: rgba(100, 100, 110, 0.3);
+
 $font-family-base: 'Arial', sans-serif;
 $font-size-base: 16px;
 $font-size-large: 1.25rem;
@@ -62,7 +50,6 @@ $spacing-unit-half: 0.5rem;
 $spacing-unit-double: 2rem;
 
 // Border Variables
-$border-radius: 4px;
 $border-color: #e5e5e5;
 
 // Transition Variables

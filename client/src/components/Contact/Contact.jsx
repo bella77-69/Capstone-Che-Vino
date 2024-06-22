@@ -16,9 +16,10 @@ export default function Contact() {
   return (
     <div className="wine-section">
       <div className="container">
-      <div className="col-lg-7 mx-auto ">
-          <Title title="Recent Comments" />
-        </div>
+      <header className="review-page__header">
+        <h1 className="review-page__title">Recent Comments</h1>
+        <div className="review-page__divider"></div>
+      </header>
      
       </div>
       <div className="media align-items-lg-center flex-column" key={comments.id}>

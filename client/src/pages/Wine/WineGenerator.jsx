@@ -24,7 +24,7 @@ const WineGenerator = () => {
 
   return (
     <section className="wine-gen-section">
-      <div className="wine-gen-container">
+      <div className="wine-gen-container ">
         <header className="wine-gen-section-header">
           <h1 className="wine-gen-section-title">Wine Generator</h1>
           <p className="wine-gen-section-text">

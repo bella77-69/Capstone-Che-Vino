@@ -30,7 +30,14 @@ export default function Search() {
   return (
     <section className="wine-section">
       <div className="container">
-        <h1 className="section-title">Search By Year</h1>
+      <header className="wines-section-header">
+          <h1 className="wines-section-title">Search By Year</h1>
+          <p className="wines-section-text">
+            Search for wines by year to find the perfect bottle for your special occasion.
+          </p>
+          <div className="wines-divider"></div>
+        </header>
+
         <div>
           <div className="search-wrapper">
             <div className="form">

@@ -3,7 +3,7 @@
 
 .footer {
   background-color: $primary-color;
-  color: #ffffff;
+  color: $font;
   padding: 20px 0;
   text-align: center;
 
@@ -30,11 +30,11 @@
       margin-bottom: 8px;
 
       .footer-social {
-        color: #ffffff;
+        color: $font;
         font-size: 1.5rem;
 
         &:hover {
-          color: #a0aec0;
+          color: $highlight-color;
         }
       }
     }

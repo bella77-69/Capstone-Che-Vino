@@ -1,0 +1,124 @@
+@import "../../partials/variables";
+@import "../../partials/_mixins";
+
+.review-page {
+    background-color: $section-background;
+    color: $font;
+    padding: 20px;
+    height: auto;
+
+    &__header {
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 2rem;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    &__divider {
+        width: 50%;
+        height: 2px;
+        border-bottom: 1px solid $highlight-color;
+        margin: 0 auto 20px auto;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    &__card {
+        background-color: $card-background !important;
+        color: $font !important;
+        border: 1px solid $highlight-color !important;
+        margin: 15px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__image {
+        max-width: 200px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    &__info {
+        text-align: center;
+        margin-top: 10px;
+        flex: 1; 
+    }
+
+    &__wine,
+    &__style,
+    &__price,
+    &__review,
+    &__rating {
+        margin: 5px 0;
+        font-weight: 100 !important;
+        font-size: $font-size-base;
+    }
+
+    &__button {
+        margin-top: 10px;
+    }
+
+    &__link {
+        text-decoration: none;
+        background-color: $highlight-color;
+        color: $font;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+        margin-top: auto; 
+    }
+}
+
+@media (min-width: 576px) {
+    .review-page__card {
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    .review-page__title {
+        font-size: 3rem;
+    }
+
+    .review-page__content {
+        justify-content: space-around;
+    }
+
+    .review-page__review {
+        font-size: $font-size-large;
+        font-weight: 200;
+    }
+
+    .review-page__wine,
+    .review-page__style,
+    .review-page__price,
+    .review-page__review,
+    .review-page__rating {
+        font-size: $font-size-large;
+    }
+}
+
+@media (min-width: 992px) {
+    .review-page__title {
+        font-size: 3.5rem;
+    }
+
+    .review-page__card {
+        max-width: 400px;
+    }
+}

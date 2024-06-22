@@ -22,7 +22,6 @@
 
 .wine-gen-section-title {
   font-size: 2.5rem;
-  font-weight: bold;
   margin-bottom: 10px;
   
 }
@@ -33,15 +32,17 @@
 }
 
 .wine-gen-divider {
+  width: 50%;
+  height: 2px;
   border-bottom: 1px solid $highlight-color;
-  margin-bottom: 2rem;
+  margin: 0 auto 20px auto;
 }
 
 .wine-gen-card {
   display: flex;
   flex-direction: column;
   background-color: $card-background;
-  border-radius: 15px;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   padding: 2rem;
