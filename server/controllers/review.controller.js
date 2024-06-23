@@ -23,21 +23,24 @@ exports.getReviewByPrice = (req, res) => {
   // create new review
   exports.createNewReview = (req, res) => {
     const reviewReqData = new ReviewModel(req.body);
-   // console.log("adminReqData", adminReqData);
-    // check null
+
+    // Check for null or empty request body
     if (req.body.constructor === Object && Object.keys(req.body).length === 0) {
-      res.send(400).send({ success: false, message: "Please fill all fields" });
+        res.status(400).send({ success: false, message: "Please fill all fields" });
     } else {
-      ReviewModel.createNewReview(reviewReqData, (err, user) => {
-        if (err) res.send(err);
-        res.json({
-          status: true,
-          message: "Review Created Successfully",
-          data: user.insertId,
+        ReviewModel.createNewReview(reviewReqData, (err, review) => {
+            if (err) {
+                res.send(err);
+            } else {
+                res.json({
+                    status: true,
+                    message: "Review Created Successfully",
+                    data: review.insertId,
+                });
+            }
         });
-      });
     }
-  };
+};
   
   // get review by ID  for Update
   exports.getReviewByID = (req, res) => {

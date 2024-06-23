@@ -39,20 +39,16 @@ Review.getReviewByPrice = (price, result) => {
 
   // create new review
   Review.createNewReview = (reviewReqData, result) => {
-    dbConn.query(
-      "INSERT INTO review SET ?",
-      reviewReqData,
-      (err, res) => {
+    dbConn.query("INSERT INTO review SET ?", reviewReqData, (err, res) => {
         if (err) {
-          console.log("Error while inserting review");
-          result(null, err);
+            console.log("Error while inserting review", err);
+            result(null, err);
         } else {
-          console.log("Review created successfully");
-          result(null, res);
+            console.log("Review created successfully");
+            result(null, res);
         }
-      }
-    );
-  };
+    });
+};
   
   //get review by ID for update
   Review.getReviewByID = (id, result) => {

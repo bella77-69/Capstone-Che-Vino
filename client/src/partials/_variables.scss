@@ -14,10 +14,12 @@ $divider: #9d909b;
 $font-family-base: 'Montserrat', sans-serif !important;
 $font-size-base: 16px;
 $font-size-mobile: 17.5px;
+$font-size-tablet: 18px;
 $font-size-large: 1.25rem; // 20px
 $font-size-small: 0.875rem; // 14px
 
 
+// Header Variables
 $header-font-mobile: 1.75rem;
 $header-font-tablet: 2rem;
 $header-font-desktop: 40px;
@@ -46,10 +48,7 @@ $bg-light: #f8f9fa; // Light background color
 // $section-background: #1a202c;
 $section-background: rgba(100, 100, 110, 0.3);
 $card-background: rgba(131, 131, 142, 0.3);
-$font-family-base: 'Arial', sans-serif;
-$font-size-base: 16px;
-$font-size-large: 1.25rem;
-$font-size-small: 0.875rem;
+
 
 // Spacing Variables
 $spacing-unit: 1rem;

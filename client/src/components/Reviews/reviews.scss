@@ -1,112 +1,253 @@
+// @import "../../partials/variables";
+// @import "../../partials/_mixins";
+
+// // Mixins
+// @mixin flex-center {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// @mixin media-lg {
+//   @media (min-width: 992px) {
+//     @content;
+//   }
+// }
+
+// .wine-section {
+//   padding: 2rem 0;
+
+//   .container {
+//     @include flex-center;
+//     flex-direction: column;
+
+//     .card {
+//       background-color: $card-background;
+//       border: 1px solid $highlight-color;
+//       border-radius: 8px;
+//       padding: 1.5rem;
+//       text-align: center;
+
+//       .card-title {
+//         font-size: 1.75rem;
+//         font-weight: bold;
+//       }
+
+//       .card-subtitle {
+//         font-size: 1.25rem;
+//         color: $font;
+//         margin-top: 0.5rem;
+//       }
+
+//       .card-text {
+//         font-size: 1rem;
+//         margin-top: 0.5rem;
+//       }
+
+//       .btn {
+//         background-color: $highlight-color;
+//         border-radius: 4px;
+//         color: $font;
+//         font-size: 1rem;
+//         margin-top: 1rem;
+//         padding: 0.5rem 1rem;
+
+//         &:hover {
+//           background-color: darken($highlight-color, 10%);
+//           color: $secondary-color;
+//         }
+
+//         .card-link {
+//           color: inherit;
+//           text-decoration: none;
+
+//           &:hover {
+//             text-decoration: underline;
+//           }
+//         }
+//       }
+//     }
+
+//     .media {
+//       @include flex-center;
+//       flex-direction: column;
+
+//       @include media-lg {
+//         flex-direction: row;
+//         text-align: left;
+//       }
+
+//       .media-body {
+//         margin-top: 1rem;
+
+//         @include media-lg {
+//           margin-top: 0;
+//         }
+
+//         .font-weight-bold {
+//           font-weight: bold;
+//         }
+
+//         img {
+//           border-radius: 8px;
+//           margin-top: 1rem;
+//           max-width: 100%;
+
+//           @include media-lg {
+//             margin-top: 0;
+//           }
+//         }
+
+//         .d-flex {
+//           @include flex-center;
+//           flex-direction: column;
+
+//           .btn {
+//             margin: 0.5rem 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 @import "../../partials/variables";
 @import "../../partials/_mixins";
 
-// Mixins
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin media-lg {
-  @media (min-width: 992px) {
-    @content;
-  }
-}
-
 .wine-section {
+  background-color: $section-background;
+  color: $font;
   padding: 2rem 0;
 
   .container {
-    @include flex-center;
-    flex-direction: column;
+    max-width: 900px;
 
-    .card {
-      background-color: $card-background;
-      border: 1px solid $highlight-color;
-      border-radius: 8px;
-      padding: 1.5rem;
+    margin: 0 auto;
+    padding: 1rem;
+
+    header.wines-section-header {
       text-align: center;
+      margin-bottom: 2rem;
 
-      .card-title {
-        font-size: 1.75rem;
+      .wines-section-title {
+        font-size: 2.5rem;
         font-weight: bold;
-      }
-
-      .card-subtitle {
-        font-size: 1.25rem;
         color: $font;
-        margin-top: 0.5rem;
       }
 
-      .card-text {
-        font-size: 1rem;
-        margin-top: 0.5rem;
-      }
-
-      .btn {
-        background-color: $highlight-color;
-        border-radius: 4px;
-        color: $font;
-        font-size: 1rem;
-        margin-top: 1rem;
-        padding: 0.5rem 1rem;
-
-        &:hover {
-          background-color: darken($highlight-color, 10%);
-          color: $secondary-color;
-        }
-
-        .card-link {
-          color: inherit;
-          text-decoration: none;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
+      .wines-section-text {
+        font-size: 1.2rem;
+        color: darken($font, 20%);
       }
     }
 
     .media {
-      @include flex-center;
+      display: flex;
       flex-direction: column;
-
-      @include media-lg {
-        flex-direction: row;
-        text-align: left;
-      }
+      align-items: center;
+      background-color: $card-background;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
 
       .media-body {
-        margin-top: 1rem;
+        text-align: center;
 
-        @include media-lg {
-          margin-top: 0;
+        .card-subtitle {
+          font-size: $font-size-base;
+          color: $font;
+          margin-top: 0.5rem;
         }
 
-        .font-weight-bold {
-          font-weight: bold;
-        }
-
-        img {
-          border-radius: 8px;
+        .card-review {
           margin-top: 1rem;
-          max-width: 100%;
-
-          @include media-lg {
-            margin-top: 0;
-          }
+          color: $font;
+          font-size: $font-size-base;
+          text-align: left;
         }
 
-        .d-flex {
-          @include flex-center;
-          flex-direction: column;
+        .card-text {
+          font-size: $font-size-base;
+          color: $font;
+          margin-top: 0.5rem;
+        }
 
-          .btn {
-            margin: 0.5rem 0;
+        .card-reviews {
+          margin-top: 1rem;
+          color: $font
+        }
+
+        .card-reviews__name {
+          font-size: $font-size-base;
+        }
+
+        .card-reviews__review {
+          font-size: $font-size-base;
+          text-align: left;
+        }
+
+
+        .btn {
+          margin-top: 1rem;
+          background-color: $highlight-color;
+          color: white;
+          border: none;
+          padding: 0.5rem 1rem;
+          border-radius: 4px;
+          cursor: pointer;
+          text-decoration: none;
+
+          a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+              color: $highlight-color;
+            }
+          }
+
+          &:hover {
+            background-color: darken($highlight-color, 10%);
           }
         }
-      }
-    }
+ 
+
+@media (min-width: 576px) {
+  .card-subtitle {
+    font-size: $font-size-mobile;
   }
+
+  .card-text {
+    font-size: $font-size-mobile;
+  }
+
+  .card-review {
+    font-size: $font-size-mobile;
+  }
+}
+@media (min-width: 992px) {
+  .card-subtitle {
+    font-size: $font-size-tablet;
+  }
+
+  .card-text {
+    font-size: $font-size-tablet;
+  }
+
+  .card-reviews__name {
+    font-size: $font-size-tablet;
+  }
+
+  .card-reviews__review {
+    font-size: $font-size-tablet;
+  }
+
+  .card-review {
+    font-size: $font-size-tablet;
+  }
+}
+
+}
+}
+}
 }

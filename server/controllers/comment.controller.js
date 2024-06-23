@@ -22,29 +22,24 @@ exports.getByCommentId= (req, res) => {
   
   // create new comment
   exports.createNewComment = (req, res) => {
-  //   const CommentsReqData = new CommentsModel(req.body);
-  //   if (req.body.constructor === Object && Object.keys(req.body).length === 0) {
-  //     res.send(400).send({ success: false, message: "Please fill all fields" });
-  //   } else {
-  //     CommentsModel.createNewComment(CommentsReqData, (err, user) => {
-  //       if (err) res.send(err);
-  //       res.json({
-  //         status: true,
-  //         message: "Comment Created Successfully",
-  //         data: user.insertId,
-  //       });
-  //     });
-  //   }
-  // };
-  const CommentsReqData= new CommentsModel(req.body);
-  if (req.body.constructor === Object && Object.keys(req.body).length === 0) {
-    res.send(400).send({ success: false, message: "Please fill all fields" });
-  } else {
-    CommentsModel.createNewComment(CommentsReqData, (err, user) => {
-      if (err) res.send(err);
-      res.json(user);
-    });
-  }
+    const commentReqData = new CommentsModel(req.body);
+
+    // Check for null or empty request body
+    if (req.body.constructor === Object && Object.keys(req.body).length === 0) {
+        res.status(400).send({ success: false, message: "Please fill all fields" });
+    } else {
+        CommentsModel.createNewComment(commentReqData, (err, comment) => {
+            if (err) {
+                res.send(err);
+            } else {
+                res.json({
+                    status: true,
+                    message: "Comment Created Successfully",
+                    data: comment.insertId,
+                });
+            }
+        });
+    }
 };
   
   // get comment  by ID 
