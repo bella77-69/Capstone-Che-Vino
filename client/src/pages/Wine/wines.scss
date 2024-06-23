@@ -42,11 +42,11 @@
   display: flex;
   flex-direction: column;
   background-color: $card-background;
-  border: 1px solid $highlight-color;
-  border-radius: 15px;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   padding: 2rem;
+  border: 1px solid $highlight-color;
 }
 
 .wines-content {
@@ -63,7 +63,6 @@
   max-width: 300px;
   height: auto;
   object-fit: cover;
-  border-radius: 10px;
 }
 
 .wines-details {
@@ -79,6 +78,7 @@
   white-space: normal;
   word-wrap: break-word;
   color: $font;
+  margin-top: 1rem;
 }
 
 .wines-stats {
@@ -148,9 +148,9 @@
 
 .wines-select {
   padding: 10px;
-  border: 1px solid $font;
+  border: 1px solid $cement;
   border-radius: 4px;
-  background-color: $bg-light;
+  background-color: $font;
   width: 100%;
   max-width: 200px;
   margin: 0 auto;
@@ -174,7 +174,7 @@
 
   .wines-details {
     text-align: left;
-    width: 70%;
+    width: 60%;
   }
 
   .wines-name {
@@ -195,12 +195,18 @@
 }
 
 @media (min-width: 768px) {
+  .wines-section {
+    padding: 50px;
+  }
   .wines-card {
     padding: 3rem;
   }
 }
 
 @media (min-width: 992px) {
+  .wines-card {
+    padding: 3rem;
+  }
   .wines-section-title {
     font-size: $header-font-desktop;
   }
@@ -210,7 +216,7 @@
   }
 
   .wines-name {
-    font-size: 2.5rem;
+    font-size: 2rem;
     max-width: 100%;
   }
 

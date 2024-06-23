@@ -63,7 +63,6 @@
   max-width: 300px;
   height: auto;
   object-fit: cover;
-  border-radius: 10px;
 }
 
 .wine-gen-details {
@@ -176,7 +175,7 @@
 
   .wine-gen-details {
     text-align: left;
-    width: 70%;
+    width: 60%;
   }
 
   .wine-gen-name {
@@ -193,17 +192,24 @@
     justify-content: flex-start;
   }
   .wine-gen-button {
-   display: flex;
+    display: flex;
   }
 }
 
 @media (min-width: 768px) {
+  .wine-gen-section {
+    
+    padding: 50px;
+   }
   .wine-gen-card {
     padding: 3rem;
   }
 }
 
 @media (min-width: 992px) {
+  .wine-gen-section {
+   padding: 50px;
+  }
   .wine-gen-section-title {
     font-size: $header-font-desktop;
   }

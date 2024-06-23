@@ -26,10 +26,10 @@ AllComments.getAllComments = (result) => {
 
 
 //get comments by comment id
-AllComments.getByCommentId = (id, result) => {
+AllComments.getByCommentId = (review_id, result) => {
   dbConn.query(
-    "SELECT * FROM comments WHERE id= ?",
-    id,
+    "SELECT * FROM comments WHERE review_id = ?",
+    review_id,
     (err, res) => {
       if (err) {
        console.log("Error while fetching data by id", err);

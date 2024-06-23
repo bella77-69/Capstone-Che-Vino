@@ -1,115 +1,3 @@
-// @import "../../partials/variables";
-// @import "../../partials/_mixins";
-
-// // Mixins
-// @mixin flex-center {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// @mixin media-lg {
-//   @media (min-width: 992px) {
-//     @content;
-//   }
-// }
-
-// .wine-section {
-//   padding: 2rem 0;
-
-//   .container {
-//     @include flex-center;
-//     flex-direction: column;
-
-//     .card {
-//       background-color: $card-background;
-//       border: 1px solid $highlight-color;
-//       border-radius: 8px;
-//       padding: 1.5rem;
-//       text-align: center;
-
-//       .card-title {
-//         font-size: 1.75rem;
-//         font-weight: bold;
-//       }
-
-//       .card-subtitle {
-//         font-size: 1.25rem;
-//         color: $font;
-//         margin-top: 0.5rem;
-//       }
-
-//       .card-text {
-//         font-size: 1rem;
-//         margin-top: 0.5rem;
-//       }
-
-//       .btn {
-//         background-color: $highlight-color;
-//         border-radius: 4px;
-//         color: $font;
-//         font-size: 1rem;
-//         margin-top: 1rem;
-//         padding: 0.5rem 1rem;
-
-//         &:hover {
-//           background-color: darken($highlight-color, 10%);
-//           color: $secondary-color;
-//         }
-
-//         .card-link {
-//           color: inherit;
-//           text-decoration: none;
-
-//           &:hover {
-//             text-decoration: underline;
-//           }
-//         }
-//       }
-//     }
-
-//     .media {
-//       @include flex-center;
-//       flex-direction: column;
-
-//       @include media-lg {
-//         flex-direction: row;
-//         text-align: left;
-//       }
-
-//       .media-body {
-//         margin-top: 1rem;
-
-//         @include media-lg {
-//           margin-top: 0;
-//         }
-
-//         .font-weight-bold {
-//           font-weight: bold;
-//         }
-
-//         img {
-//           border-radius: 8px;
-//           margin-top: 1rem;
-//           max-width: 100%;
-
-//           @include media-lg {
-//             margin-top: 0;
-//           }
-//         }
-
-//         .d-flex {
-//           @include flex-center;
-//           flex-direction: column;
-
-//           .btn {
-//             margin: 0.5rem 0;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
 @import "../../partials/variables";
 @import "../../partials/_mixins";
 
@@ -138,6 +26,11 @@
         font-size: 1.2rem;
         color: darken($font, 20%);
       }
+    }
+
+    .wines-section-wines {
+      font-size: 1.5rem;
+      color: $font;
     }
 
     .media {

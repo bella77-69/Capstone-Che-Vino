@@ -24,7 +24,7 @@ const WineGenerator = () => {
 
   return (
     <section className="wine-gen-section">
-      <div className="wine-gen-container ">
+      <div className="wine-gen-container">
         <header className="wine-gen-section-header">
           <h1 className="wine-gen-section-title">Wine Generator</h1>
           <p className="wine-gen-section-text">
@@ -32,14 +32,14 @@ const WineGenerator = () => {
           </p>
           <div className='wine-gen-divider'></div>
           <select className="wine-gen-select" onChange={handleWineTypeChange}>
-                <option value="">Select Wine Type</option>
-                <option value="red">Red</option>
-                <option value="white">White</option>
-                <option value="dessert">Dessert</option>
-                <option value="port">Port</option>
-                <option value="rose">Rose</option>
-                <option value="sparkling">Sparkling</option>
-              </select>
+            <option value="">Select Wine Type</option>
+            <option value="red">Red</option>
+            <option value="white">White</option>
+            <option value="dessert">Dessert</option>
+            <option value="port">Port</option>
+            <option value="rose">Rose</option>
+            <option value="sparkling">Sparkling</option>
+          </select>
         </header>
         <div className="wine-gen-card">
           <div className="wine-gen-content">
@@ -77,14 +77,13 @@ const WineGenerator = () => {
               <button className="wine-gen-button" onClick={handleRandomWine}>
                 Generate Random Wine
               </button>
-           
             </div>
           </div>
         </div>
-  
       </div>
     </section>
   );
 };
 
 export default WineGenerator;
+

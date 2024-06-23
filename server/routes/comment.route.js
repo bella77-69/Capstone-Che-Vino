@@ -10,7 +10,7 @@ router.get("/", commentController.getAllComments);
 router.get("/:id", commentController.getCommentByID);
 
 // get name for Update
-router.get("/comments/:commentid", commentController.getByCommentId);
+// router.get("/comments/:commentid", commentController.getByCommentId);
 
 // create new comment
 router.post("/", commentController.createNewComment);

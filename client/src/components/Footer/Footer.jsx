@@ -5,7 +5,6 @@ import {
   FaFacebookSquare,
   FaInstagramSquare,
   FaTwitterSquare,
-  FaEnvelope,
 } from "react-icons/fa";
 
 function Footer() {
@@ -14,9 +13,9 @@ function Footer() {
       
       <div className="footer-container">
     
-      {/* <div className="footer-header">
+      <div className="footer-header">
           <img src={logo} className="footer-img" alt="footer-logo-pic" />
-        </div> */}
+        </div>
   
         <div className="footer-copyright">
           &copy; 2021 Che Vino. All rights reserved.

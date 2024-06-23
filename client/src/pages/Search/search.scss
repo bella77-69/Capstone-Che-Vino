@@ -5,6 +5,7 @@
   background-color: $section-background;
   color: $font;
   padding: 40px 20px;
+  height: auto;
 }
 
 .container {
@@ -155,13 +156,6 @@
   width: 100%;
 }
 
-// .card {
-//   background-color: $card-background !important;
-//   border: 1px solid $cement;
-//   border-radius: 8px;
-//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-// }
-
 .title {
   font-size: 1.2rem;
   color: $font;
@@ -191,4 +185,6 @@
 
 .search-wrapper {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }

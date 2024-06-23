@@ -63,8 +63,14 @@ export default function Search() {
                   src={value.image}
                   alt="wine"
                 />
+                
                 <div className="card-body">
-                <div className="review-stats d-flex align-items-center">
+         
+                  <h5 className="title">{value.wine}</h5>
+                  <h6 className="subtitle">Winery: {value.winery}</h6>
+                   <div className="wines-divider"></div>
+                  <p className="text">Average Rating: {value.average}</p>
+                  <div className="review-stats d-flex align-items-center">
                     <svg
                       fill="currentColor"
                       stroke="currentColor"
@@ -76,14 +82,12 @@ export default function Search() {
                     >
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
                     </svg>
+                    
+                    
                     <span className="review ml-2">
                       Reviews: {value.reviews}
                     </span>
                   </div>
-                  <h5 className="title">{value.wine}</h5>
-                  <h6 className="subtitle mb-2">Winery: {value.winery}</h6>
-                  <p className="text mt-2">Average Rating: {value.average}</p>
-         
                   
                 </div>
               </div>
