@@ -3,9 +3,10 @@
 
 
 .leave-review {
-  padding: 2rem 0;
-  background-color: #1a202c;
-  color: $secondary-color;
+  background-color: $section-background;
+  color: $font;
+  padding: 20px;
+  height: auto;
 
   &__container {
     max-width: 960px;

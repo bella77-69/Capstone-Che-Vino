@@ -21,19 +21,21 @@
 }
 
 .wines-section-title {
-  font-size: 2.5rem;
+  font-size: $header-font-mobile;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .wines-section-text {
-  font-size: 1.25rem;
+  font-size: $font-size-base;
   line-height: 1.6;
 }
 
 .wines-divider {
-  margin-bottom: 1rem;
+  width: 50%;
+  height: 2px;
   border-bottom: 1px solid $highlight-color;
+  margin: 0 auto 20px auto;
 }
 
 .wines-card {
@@ -155,6 +157,12 @@
 }
 
 @media (min-width: 576px) {
+  .wines-section-title {
+    font-size: $header-font-tablet;
+  }
+  .wines-section-text {
+    font-size: $font-size-mobile;
+  }
   .wines-content {
     flex-direction: row;
     justify-content: space-around
@@ -194,11 +202,11 @@
 
 @media (min-width: 992px) {
   .wines-section-title {
-    font-size: 3rem;
+    font-size: $header-font-desktop;
   }
 
   .wines-section-text {
-    font-size: 1.5rem;
+    font-size: $font-size-large
   }
 
   .wines-name {

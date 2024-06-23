@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
 import "./contactPage.scss";
-import Title from "../../components/Title/Title";
 import Contact from "../../components/Contact/Contact";
 
 export default function ContactPage() {
@@ -56,6 +55,7 @@ export default function ContactPage() {
           <p className="wines-section-text">
           For Inquiries, Support Requests or General Questions
           </p>
+          <div className="wines-divider"></div>
         </header>  
         </div>
 

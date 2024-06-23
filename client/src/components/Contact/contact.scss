@@ -2,9 +2,10 @@
 @import "../../partials/_mixins";
 
 .contact {
-    margin: 0, auto;
     background-color: $section-background;
     color: $font;
+    padding: 20px;
+    height: auto;
   
 
     &-name {

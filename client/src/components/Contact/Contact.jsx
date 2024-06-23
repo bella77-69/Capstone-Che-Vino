@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./contact.scss";
 import axios from "axios";
-import Title from "../Title/Title";
 
 export default function Contact() {
   const [comments, setComments] = useState([]);

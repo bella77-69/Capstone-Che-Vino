@@ -29,9 +29,17 @@ const Reviews = () => {
   return (
     <section className="wine-section text-white">
       <div className="container py-5">
-        <div className="col-lg-7 mx-auto ">
+      <header className="wines-section-header">
+          <h1 className="wines-section-title">Wine Reviews</h1>
+          <p className="wines-section-text">
+            Read reviews from our customers and leave your own review.
+          </p>
+          
+          <div className="wines-divider"></div>
+        </header>
+        {/* <div className="col-lg-7 mx-auto ">
           <Title title="Wine Reviews" />
-        </div>
+        </div> */}
 
         <div className="media align-items-lg-center flex-column flex-lg-row p-3">
           {services.map((service) => (
