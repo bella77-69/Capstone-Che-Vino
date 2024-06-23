@@ -37,7 +37,6 @@
         background-color: $card-background !important;
         color: $font !important;
         border: 1px solid $highlight-color !important;
-        margin: 15px;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -54,20 +53,37 @@
         border-radius: 8px;
     }
 
+    &__divider {
+        width: 50%;
+        height: 2px;
+        border-bottom: 1px solid $highlight-color;
+        margin: 10px auto;
+    }
+
     &__info {
         text-align: center;
         margin-top: 10px;
         flex: 1; 
     }
 
-    &__wine,
+    .review-page__wine {
+        font-size: 1.25rem;
+        margin-top: 5px;
+    }
+
     &__style,
     &__price,
     &__review,
     &__rating {
         margin: 5px 0;
         font-weight: 100 !important;
-        font-size: $font-size-base;
+        font-size: $font-size-small;
+    }
+
+    &__reviews {
+        font-size: $font-size-small;
+        font-weight: 100;
+        line-height: 1.3;
     }
 
     &__button {
@@ -92,6 +108,11 @@
 
     .review-page__title {
         font-size: $header-font-tablet;
+    }
+
+    .review-page__reviews {
+        font-size: $font-size-base;
+        font-weight: 200;
     }
 }
 

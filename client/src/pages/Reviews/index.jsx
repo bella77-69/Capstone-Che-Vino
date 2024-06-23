@@ -61,10 +61,14 @@ const ReviewPage = () => {
             <img className="review-page__image" src={item.image} alt="wine-img" />
             <div className="review-page__info">
               <h4 className="review-page__wine">{item.wine}</h4>
-              <h5 className="review-page__style">{item.style}</h5>
-              <h5 className="review-page__price">{item.price}</h5>
-              <h5 className="review-page__review">{item.review}</h5>
-              <p className="review-page__rating">Rating: {item.rating}</p>
+              <div className="review-page__divider"></div>
+              <h5 className="review-page__style">Style: {item.style}</h5>
+              <h5 className="review-page__price">Price: {item.price}</h5>
+              <h5 className="review-page__rating">Rating: {item.rating}</h5>
+              <div className="review-page__divider"></div>
+              <h5 className="review-page__review">Review:</h5>
+              <p className="review-page__reviews"> {item.review}</p>
+          
             </div>
             <button className="review-page__button btn" onClick={(e) => handleSubmit(item.id, e)}>
               <Link to={`/reviews/${item.id}`} className="review-page__link">
